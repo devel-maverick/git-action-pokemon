@@ -15,7 +15,11 @@ jobs:
          - name: initialise node
            uses: actions/setup-node@v4
           
+         - name: install node
+           run: npm install
+          
          - name: build frontend
            run: npm run build
+           
         
            
