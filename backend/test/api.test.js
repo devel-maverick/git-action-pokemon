@@ -30,7 +30,7 @@ describe('Pokémon API Routes', () => {
 
   it('GET /mewtwo', async () => {
     const res = await request(app).get('/mewtwo');
-    expect(res.status).to.equal(200);
+    expect(res.status).to.equal(100);
     expect(res.text).to.equal('Mewtwo - Power: Psychic');
   });
 
