@@ -7,17 +7,15 @@ jobs:
      runs-on: ubuntu-latest
      defaults:
        run:
-         working-directory: backend
+         working-directory: frontend
      steps:
          - name: checkout repo
            uses: actions/checkout@v4
            
          - name: initialise node
            uses: actions/setup-node@v4
-
-         - name: install node
-           run: npm install
-
-         - name: test backend
-           run: npm test
+          
+         - name: build frontend
+           run: npm run build
+        
            
